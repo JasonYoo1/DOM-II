@@ -40,4 +40,26 @@ function zoom(event) {
   el.addEventListener('wheel', zoom);
 
 
-//
+//DRAG DROP
+
+var dragged;
+
+document.addEventListener("drag", function(event) {
+}, false);
+
+
+//FOCUS
+
+const password = document.querySelector('input[type="password"]');
+
+password.addEventListener('focus', (event) => {
+  event.target.style.background = 'pink';    
+});
+
+password.addEventListener('blur', (event) => {
+  event.target.style.background = '';    
+});
+
+
+
+

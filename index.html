@@ -32,7 +32,10 @@
      
   <div class="container home">
     <header class="intro">
-      <img src="img/fun-bus.jpg" alt="bus in the sand">
+      <div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+          <img src="img/fun-bus.jpg" alt="bus in the sand">
+      </div>
+      <!-- <img src="img/fun-bus.jpg" alt="bus in the sand"> -->
       <h2>Welcome To Fun Bus!</h2>
       <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
       <p id='log'></p>
@@ -82,6 +85,13 @@
       </div>
     </section>
   </div><!-- container -->
+
+  <div class = projectForm>
+      <form id="form">
+          <input type="text" placeholder="text input">
+          <input type="password" placeholder="password">
+        </form>
+  </div>
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
