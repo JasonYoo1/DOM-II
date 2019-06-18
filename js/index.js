@@ -60,6 +60,36 @@ password.addEventListener('blur', (event) => {
   event.target.style.background = '';    
 });
 
+//WIDTH
+const widthOutput = document.querySelector('#width');
+function reportWindowSize() {
+    widthOutput.textContent = window.innerWidth;
+  }
+  window.onresize = reportWindowSize;
+
+
+// scroll
+
+let last_known_scroll_position = 0;
+let ticking = false;
+
+function doSomething(scroll_pos) {
+}
+
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(last_known_scroll_position);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
+
+
 
 
 
