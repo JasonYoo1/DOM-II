@@ -1,6 +1,6 @@
 // Your code goes here
 
-
+//MOUSEOVER
 let navLink = document.getElementById('something');
 
 navLink.addEventListener("mouseover", function( event ) {   
@@ -12,8 +12,10 @@ navLink.addEventListener("mouseover", function( event ) {
 
 
 
-// document.addEventListener('keydown', logKey);
 
-// function logKey(e) {
-//   log.textContent += ` ${e.code}`;
-// }
+//KEYDOWN
+document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+  log.textContent += ` ${e.code}`;
+}
