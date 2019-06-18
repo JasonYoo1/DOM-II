@@ -102,4 +102,12 @@ function logSelection(event) {
 
 
 
+//DBCLICK added to ISLAND getaway btn
+
+
+const workBtn = document.getElementById('work-btn')
+
+workBtn.addEventListener('dblclick', function () {
+    console.log('I was clicked')
+});
 
